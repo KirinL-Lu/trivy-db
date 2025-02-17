@@ -244,7 +244,7 @@ func splitPkgName(product string) (string, string) {
 	lastStr := version[secondLastIndex+1:]
 
 	newVersion := version
-	if strings.HasSuffix(lastStr, "euleros") {
+	if strings.HasPrefix(lastStr, "euleros") {
 		newVersion = secStr
 	} else {
 		newVersion = subStr
