@@ -11,6 +11,7 @@ import (
 	"github.com/aquasecurity/trivy-db/pkg/vulnsrc/chainguard"
 	"github.com/aquasecurity/trivy-db/pkg/vulnsrc/composer"
 	"github.com/aquasecurity/trivy-db/pkg/vulnsrc/debian"
+	"github.com/aquasecurity/trivy-db/pkg/vulnsrc/euler"
 	"github.com/aquasecurity/trivy-db/pkg/vulnsrc/ghsa"
 	"github.com/aquasecurity/trivy-db/pkg/vulnsrc/glad"
 	"github.com/aquasecurity/trivy-db/pkg/vulnsrc/govulndb"
@@ -58,6 +59,7 @@ var (
 		chainguard.NewVulnSrc(),
 		bitnami.NewVulnSrc(),
 		openeuler.NewVulnSrc(),
+		euler.NewVulnSrc(),
 
 		k8svulndb.NewVulnSrc(),
 
